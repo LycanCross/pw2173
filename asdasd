@@ -1,0 +1,4 @@
+
+pdm.html?nombre=algo&otro=valor&otroi=valor
+? <----- Inicio de parámetros
+& <----- Siguientes parámetros

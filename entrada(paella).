@@ -1,0 +1,34 @@
+entrada(paella).
+entrada(gazpacho).
+entrada(consome).
+carne(filete_de_cerdo).
+carne(pollo_asado).
+pescado(trucha).
+pescado(bacalao).
+postre(flan).
+postre(nueces_con_miel).
+postre(naranja).
+
+
+calorias(paella, 200).
+calorias(gazpacho, 150).
+calorias(consome, 300).
+calorias(filete_de_cerdo, 300).
+calorias(pollo_asado, 280).
+calorias(trucha, 160).
+calorias(bacalao, 300).
+calorias(flan, 200).
+calorias(nueces_con_miel, 500).
+calorias(naranja, 50).
+
+plato_principal(X):- carne(X);pescado(X).
+
+comida(X,Y,Z) :- entrada(X),plato_principal(Y),postre(Z).
+
+valor(X,Y,Z,V) :-comida(X,Y,Z),calorias(X,V1),calorias(Y,V2),calorias(Z,V3), V is V1+V2+V3.
+
+comida_equilibrada(X,Y,Z) :-valor(X,Y,Z,V),V=<800.
+
+
+
+
