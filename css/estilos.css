@@ -1,0 +1,25 @@
+
+
+body {
+	border: 1px solid red;
+	width: 1024px;
+}
+
+
+header {
+	text-align: center;
+}
+
+header img {
+	float: right;
+	width: 10%;
+}
+
+header nav ul li {
+	margin: 0px 10px 0px 0px;
+	padding: 10px 16px;
+	border-radius: 5px;
+	background: blue;
+	color: white;
+	display: inline-block;
+}
