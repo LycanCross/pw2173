@@ -2,16 +2,22 @@
 
 body {
 	border: 1px solid red;
+	margin: 0 auto;
 	width: 1024px;
+	background: rgb(19,49,77);
+	color: rgb(156,177,191);
 }
 
 
 header {
+	border: 1px solid blue;
 	text-align: center;
 }
 
 header img {
 	float: right;
+	margin-right: 15px;
+	margin-top: -60px;
 	width: 10%;
 }
 
@@ -19,7 +25,35 @@ header nav ul li {
 	margin: 0px 10px 0px 0px;
 	padding: 10px 16px;
 	border-radius: 5px;
-	background: blue;
+	box-shadow: 5px -5px rgb(18,28,37);
+	background: rgb(24,88,123);
 	color: white;
 	display: inline-block;
+	width: 80px;
 }
+
+header nav {
+	margin-top: 80px;
+}
+
+header nav ul li:hover {
+	background: orange;
+	color: blue;
+}
+
+section article {
+	border: 1px solid tomato;
+	display: inline-block;
+	margin: 0px 5px;
+	vertical-align: top;
+	width: 31.9%;
+}
+
+footer {
+	background-color: rgb(24,65,105);
+	color: white;
+	margin-top: 5px;
+	text-align: center;
+}
+
+
