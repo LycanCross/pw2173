@@ -2,5 +2,54 @@ body {
 	border: 1px solid blue;
 	font-size: 16px; /*1em*/
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 1024px;
 }
+
+form {
+	float: right;
+	margin-top: -2.2em;
+	margin-right: 1em;
+}
+
+form input{
+	/*Todos los input en el form*/
+	border-radius: 5px;
+}
+
+form input[type="button"] {
+	background: green;
+	color: white;
+}
+
+header {
+	background-color: #B3D8EB;
+}
+
+header nav {
+	background: #0E6CB0;
+	border-radius: 5px;
+	margin: 0 auto;	
+	padding: 2px 0px 2px 0px;
+	width: 99%;
+}
+
+header nav ul li {
+	color: #FAFAFB;
+	display: inline-block;
+	margin-right: 2em;
+}
+
+#seccion01 article{
+	text-align: center;
+}
+
+#seccion01 article img{
+	border: 3px solid rgba(128,128,128,.5);
+	margin-top: 8px;
+	width: 99%;
+}
+
+#logo /*Esto es un id*/ {
+	margin-top: -150px;
+}
+
