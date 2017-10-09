@@ -1,0 +1,31 @@
+body {
+	font-size: 16px; /*em*/
+	margin: 0 auto ; /*el 0 es el espacio de arriba y abajo y "auto" es para centrar el contenido de body*/
+	max-width: 1078px; /*eso mide la barra de arriba*/
+	min-width: 1078px;
+}
+
+button {
+	border: 1px solid black;
+	border-radius: 150px;
+	color: white;
+	padding-left: 2.2px;
+	width: 20px;
+}
+
+header section {
+	text-align: right;
+}
+
+header nav {
+	border: 1px solid orange;
+}
+
+header nav ul li {
+	display: inline-block;
+	margin-right: 35px;
+}
+
+#publicidad {
+	width: 40%;
+}
