@@ -1,0 +1,33 @@
+Elaborar una Aplicación móvil en APP Inventor.
+con las siguientes características:
+1.- http://itculiacan.edu.mx/dadm/apipaselista/data/validausuario.php?usuario=920&clave=12345678
+Devuelve el siguiente JSON
+{"respuesta":true,"usuariovalida":"49nc8Eznl4dnU","periodoactual":"2173"}
+respuesta = false/true si el usuario puso bien sus credenciales de acceso o no
+Si la respuesta es true, devuelve usuariovalida, que es un token especial 
+que se necesita para las siguientes llamadas a la API, periodoactual, es el
+semestre en curso y se necesita para las llamadas subsecuentes.
+2.- http://itculiacan.edu.mx/dadm/apipaselista/data/obtienegrupos.php?usuario=920&usuariovalida=49nc8Eznl4dnU&periodoactual=2173
+Devuelve el siguiente JSON
+{"respuesta":true,"grupos":[{"0":"AEB1011","clavemateria":"AEB1011","1":"7A","grupo":"7A","2":"920","usuario":"920","3":"DES. A. DIS. MOVILES","materia":"DES. A. DIS. MOVILES","4":"13001400","horalunes":"13001400","5":"13001400","horamartes":"13001400","6":"13001400","horamiercoles":"13001400","7":"13001400","horajueves":"13001400","8":"13001400","horaviernes":"13001400"},{"0":"AEB1055","clavemateria":"AEB1055","1":"8B","grupo":"8B","2":"920","usuario":"920","3":"PROG. WEB","materia":"PROG. WEB","4":"15001600","horalunes":"15001600","5":"15001600","horamartes":"15001600","6":"15001600","horamiercoles":"15001600","7":"15001600","horajueves":"15001600","8":"15001600","horaviernes":"15001600"}]}
+respuesta = true/false para saber si tenemos datos que procesar o no.
+clavemateria y grupo conformar una materia completa.
+materia = nombre de la materia
+horalunes,horamartes,horamiercoles, horajueves,horaviernes determinan a que hora se da la materia en que día.
+3.- http://itculiacan.edu.mx/dadm/apipaselista/data/obtienealumnos.php?usuario=920&usuariovalida=49nc8Eznl4dnU&periodoactual=2173&materia=AEB1011&grupo=7A
+Devuelve el siguiente JSON
+{"respuesta":true,"alumnos":[{"0":"13170756","ncontrol":"13170756","1":"ALCALA","apellidopaterno":"ALCALA","2":"RAMOS","apellidomaterno":"RAMOS","3":"ANGEL ALFREDO","nombre":"ANGEL ALFREDO"},{"0":"14171185","ncontrol":"14171185","1":"ASTORGA","apellidopaterno":"ASTORGA","2":"AVILES","apellidomaterno":"AVILES","3":"JOSE ANTONIO","nombre":"JOSE ANTONIO"},{"0":"14171188","ncontrol":"14171188","1":"BARRAZA","apellidopaterno":"BARRAZA","2":"ZAMBADA","apellidomaterno":"ZAMBADA","3":"JORGE FERNANDO","nombre":"JORGE FERNANDO"},{"0":"14171190","ncontrol":"14171190","1":"BOJORQUEZ","apellidopaterno":"BOJORQUEZ","2":"MEZA","apellidomaterno":"MEZA","3":"EDUARDO","nombre":"EDUARDO"},{"0":"14171199","ncontrol":"14171199","1":"GERMAN","apellidopaterno":"GERMAN","2":"MILLAN","apellidomaterno":"MILLAN","3":"CARLOS GEOVANNY","nombre":"CARLOS GEOVANNY"},{"0":"14171200","ncontrol":"14171200","1":"GONZALEZ","apellidopaterno":"GONZALEZ","2":"MARTINEZ","apellidomaterno":"MARTINEZ","3":"JOSE ANGEL","nombre":"JOSE ANGEL"},{"0":"14171201","ncontrol":"14171201","1":"INZUNZA","apellidopaterno":"INZUNZA","2":"MURO","apellidomaterno":"MURO","3":"JOSE DE JESUS","nombre":"JOSE DE JESUS"},{"0":"14171204","ncontrol":"14171204","1":"LEAL","apellidopaterno":"LEAL","2":"FLORES","apellidomaterno":"FLORES","3":"DAVID EDUARDO","nombre":"DAVID EDUARDO"},{"0":"12171360","ncontrol":"12171360","1":"MENDOZA","apellidopaterno":"MENDOZA","2":"MORENO","apellidomaterno":"MORENO","3":"RAMON FRANCISCO","nombre":"RAMON FRANCISCO"},{"0":"13170317","ncontrol":"13170317","1":"NOVELO","apellidopaterno":"NOVELO","2":"TRUJILLO","apellidomaterno":"TRUJILLO","3":"HELGA JUDITH","nombre":"HELGA JUDITH"},{"0":"14171218","ncontrol":"14171218","1":"RODRIGUEZ","apellidopaterno":"RODRIGUEZ","2":"BERNAL","apellidomaterno":"BERNAL","3":"LYDIA CAROLINA","nombre":"LYDIA CAROLINA"},{"0":"14171221","ncontrol":"14171221","1":"RODRIGUEZ","apellidopaterno":"RODRIGUEZ","2":"MENDOZA","apellidomaterno":"MENDOZA","3":"NORA KASSANDRA","nombre":"NORA KASSANDRA"},{"0":"14171222","ncontrol":"14171222","1":"RODRIGUEZ","apellidopaterno":"RODRIGUEZ","2":"QUI?ONEZ","apellidomaterno":"QUI?ONEZ","3":"RAMON GUADALUPE","nombre":"RAMON GUADALUPE"},{"0":"14171224","ncontrol":"14171224","1":"SALAZAR","apellidopaterno":"SALAZAR","2":"ARANDA","apellidomaterno":"ARANDA","3":"GERMAN EDUARDO","nombre":"GERMAN EDUARDO"},{"0":"14171235","ncontrol":"14171235","1":"SALAZAR","apellidopaterno":"SALAZAR","2":"LOPEZ","apellidomaterno":"LOPEZ","3":"ROBERTO GUADALUPE","nombre":"ROBERTO GUADALUPE"},{"0":"14171003","ncontrol":"14171003","1":"TORRES","apellidopaterno":"TORRES","2":"RODRIGUEZ","apellidomaterno":"RODRIGUEZ","3":"PEDRO ALBERTO","nombre":"PEDRO ALBERTO"}]}
+respuesta = true/false para saber si trae datos que procesar.
+Datos generales de caa alumno, como número de control y nombre (apellido paterno, apellido materno y nombre).
+4.- http://itculiacan.edu.mx/dadm/apipaselista/data/asignaincidencia.php?usuario=920&usuariovalida=49nc8Eznl4dnU&periodoactual=2173&materia=AEB1011&grupo=7A&ncontrol=14171185&incidencia=1
+Devuelve el siguiente JSON
+{"respuesta":true}
+respuesta = true/false para saber si se realizó la inserción de la falta o asistencia.
+	1 = asistencia
+	2 = falta
+5.- Se calificará el funcionamiento y el diseño de la interface de usuario.
+6.- Los equipos son de 3 personas (no >=4)
+7.- Entrega: 22 de septiembre
+8.- Cada equipo presentará su aplicación al resto del grupo.
+(si, van a exponer)
+
