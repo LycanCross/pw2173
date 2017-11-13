@@ -1,0 +1,122 @@
+body {
+	background-color: #2D312D;
+	font-family: 'Righteous';
+	font-size: 16px; /*em*/
+	margin: 0 auto ; /*el 0 es el espacio de arriba y abajo y "auto" es para centrar el contenido de body*/
+	max-width: 1078px; /*eso mide la barra de arriba*/
+	min-width: 1078px;
+}
+
+
+
+header input {
+	padding-top: 10px;
+	float: left;
+	text-align: right;
+}
+
+header li{
+	display: inline-block;
+	height: 40px;
+	padding-top: 20px;
+	text-align: center;
+	width: 19%;
+
+}
+
+
+#Sec01 article {
+	display: inline-block;
+	height: 300px;
+	margin-top: 10px;
+	vertical-align: top;
+	padding-top: 15px;
+	padding-left: 9px;
+	padding-right: 9px;
+	width: 18%;
+}
+
+#Sec01Art01 img {
+	width: 100%;
+}
+
+#Sec01Art01 ul li {
+	list-style:none;
+	margin-bottom: 9px;
+}
+
+#Sec02 article {
+	display: inline-block;
+	height: 300px;
+	margin-top: 10px;
+	vertical-align: top;
+	width: 32%;
+}
+
+#Sec02 article img {
+	border-bottom: 1px solid gray;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+#Sec02Art02 ul li {
+	list-style:none;
+}
+
+.boxGrande {
+	padding-top: -5px;;
+}
+
+.fondoBlanco {
+	background-color: #D9D9D9;
+}
+
+.fondoGris {
+	background-color: #595959;
+}
+
+.fondoRojo {
+	background-color: #FF284C;
+}
+
+.fondoVerde {
+	background-color: #A6D469;
+}
+
+.letraAzul {
+	color: #214B8A;
+}
+
+.letraChica {
+	font-size: 12px;
+}
+
+.letraBlanca {
+	color: #F8F5EB;
+}
+
+.letraGris {
+	color: #858585;
+}
+
+.tituloMenu {
+	font-size: 20px;
+	margin: 15px;
+}
+
+.readMore {
+	color: #F8F5EB;
+	font-size: 12px;
+	float: right;
+}
+
+.tituloPost {
+	font-size: 30px;
+}
+
+
+
+
+
+

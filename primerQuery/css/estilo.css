@@ -1,0 +1,12 @@
+body {
+	background-color: #880E4F;
+	font-family: 'Righteous';
+	font-size: 16px; /*em*/
+	margin: 0 auto ; /*el 0 es el espacio de arriba y abajo y "auto" es para centrar el contenido de body*/
+	max-width: 1078px; /*eso mide la barra de arriba*/
+	min-width: 1078px;
+}
+
+#info {
+	background-color: #E91E63;
+}

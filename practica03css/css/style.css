@@ -26,6 +26,69 @@ header nav ul li {
 	margin-right: 35px;
 }
 
+#buscador {
+	border: 1px pink solid;
+	float: right;
+	margin-top: 20px;
+	width: 30%;
+}
+
+#categorias {
+	border: 1px blue solid;
+	float: right;
+}
+
+#menu {
+	background-color: #FF8A3B;
+	background: linear-gradient(#FF882C,#FFDDC1,#FF772D,#FF4F1F,#964631);
+	border-radius: 10px;
+	color: white;
+	margin-top: 70px;
+}
+
 #publicidad {
+	text-align: right;
 	width: 40%;
+}
+
+#seccion01 {
+	border: 1px solid black;
+	display: inline-block;
+}
+
+#seccion01 article {
+	display: inline-block;
+}
+
+#secc01art01 {
+	border-bottom: 1px gray solid;
+}
+
+#seccion02 {
+	border: 1px solid purple;
+}
+
+#seccion02 article {
+	display: inline-block;
+}
+
+#tituloPost {
+	border: 1px solid orange;
+	width: 69%;
+}
+
+.tituloSeccion {
+	background-color: #FF8A3B;
+	border: 1px solid green;
+	border-radius: 7px;
+	color: white;
+}
+
+.fondoGradiente {
+	border: 1px solid black;
+	background: linear-gradient(#FF882C,#FFDDC1,#FF772D,#FF4F1F,#964631);
+	width: 100px;
+	color: white;
+
+
 }
